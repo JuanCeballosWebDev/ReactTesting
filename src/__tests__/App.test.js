@@ -126,7 +126,7 @@ test('Test last input', () => {
 });
 
 // Test 8
-test('Test <p> element', () => {
+test('Test button element', () => {
   render(<App />);
   const buttonValue = screen.getByRole('button', {name:'Blue'});
   // clicking the button:
