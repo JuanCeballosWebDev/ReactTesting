@@ -113,3 +113,27 @@ test('check box click causes button toggle disabled and color', () => {
   });
 
 });
+
+// Test 7
+test('Test last input', () => {
+  render(<App />);
+  const inputNode = screen.getByPlaceholderText('Enter your age')
+  // clicking the button:
+  // https://testing-library.com/docs/dom-testing-library/api-events#fireevent
+  //fireEvent.click(button);
+  // asserting button has new color:
+  expect(inputNode).toBeInTheDocument();
+});
+
+// Test 8
+test('Test <p> element', () => {
+  render(<App />);
+  const buttonValue = screen.getByRole('button', {name:'Blue'});
+  // clicking the button:
+  // https://testing-library.com/docs/dom-testing-library/api-events#fireevent
+  //fireEvent.click(button);
+  // asserting button has new color:
+  expect(buttonValue).toHaveStyle({
+    color: 'blue'
+  });
+});

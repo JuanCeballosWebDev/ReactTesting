@@ -29,6 +29,13 @@ function App() {
              aria-checked={disabled}
              onChange ={ (e) => setDisabled(e.target.checked) }/>
              <label htmlFor='disable-button-checkbox'>Disable button</label>
+      <br></br>
+      <input type="number" 
+             id="disable-button-checkbox"
+             placeholder='Enter your age'
+             />
+      <br></br>
+      <button style={{color: 'blue', height: '50px',width: '150px', padding: '15px'}}>Blue</button>
 
     </div>
   );
